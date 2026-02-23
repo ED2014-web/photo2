@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Scanner & Dossiers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <section class="camera-box">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <button id="snap">📸 SCANNER / CAPTURER</button>
+        </section>
+
+        <hr>
+
+        <section id="folders-view">
+            <h2>Mes Dossiers</h2>
+            <div id="folders-grid" class="grid"></div>
+        </section>
+
+        <section id="gallery-view" style="display:none;">
+            <div class="header">
+                <button class="back-btn" onclick="fermerDossier()">← Retour aux dossiers</button>
+                <h2 id="folder-title">Prénom</h2>
+            </div>
+            <div id="photos-grid" class="grid"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
